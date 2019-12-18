@@ -444,7 +444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 62.59, z: 5.43}
+  m_LocalPosition: {x: 0, y: 62.59, z: 4.9}
   m_LocalScale: {x: 2.027025, y: 23.166, z: 1.1583}
   m_Children: []
   m_Father: {fileID: 0}
@@ -688,6 +688,7 @@ MonoBehaviour:
   xRange: 20
   zRange: 12
   projectilePrefab: {fileID: 100000, guid: 10d25933610222845ad3760a855829c4, type: 3}
+  playerAnim: {fileID: 1875476844}
 --- !u!54 &1875476843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -704,3 +705,9 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1875476844 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 3bd8a450fcb589542a7843ea7bda2ee6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1717879518}
+  m_PrefabAsset: {fileID: 0}

@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    public Animator playerAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,8 +73,11 @@ public class PlayerController : MonoBehaviour
 
         transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * verticalInput);
 
+        playerAnim.SetFloat("Speed_f", (Mathf.Abs(horizontalInput + verticalInput / 2)));
+
         // if the left mouse button is pressed down, execute the if-statement inside the curly brackets
-        if (Input.GetKeyDown("mouse 0")){
+        if (Input.GetKeyDown("mouse 0"))
+        {
             // Launch Food from Player - clone projectile prefab and spawn at player position
             Instantiate(projectilePrefab, transform.position, transform.rotation);
             Debug.Log("Food was shot");
